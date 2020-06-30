@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader
 import os
 
@@ -12,4 +13,5 @@ s = ["NetworkManager"]
 services = []
 for a in s:
     services.append(os.popen('systemctl status ' + a + ' | grep Active').read())
+print("Content-type: text/html\n\n")
 print(template.render(uptime=uptime, ip=ip, services=services))
