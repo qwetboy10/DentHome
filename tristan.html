@@ -1,54 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Dent</title>
-    <!-- CSS  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css"/>
+<html>
 
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/tristan.css" />
+
+    <title>Tristan</title>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+
 </head>
+
 <body class="uk-background-secondary uk-light">
-<div class="uk-navbar-container uk-navbar-transparent uk-sticky uk-sticky-fixed">
-    <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-            <a href="/" class="uk-navbar-item">Dent</a>
+    <div class="uk-navbar-container uk-navbar-transparent uk-sticky uk-sticky-fixed">
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <a href="/" class="uk-navbar-item">Dent</a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="/tristan">Tristan</a>
+                    </li>
+                    <li>
+                        <a href="/ronak">Ronak</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="uk-flex uk-flex-around uk-container uk-container-small"
+        style="min-height: calc((100vh - 80px) - 102.625px);">
+        <div style="margin-right: 100;">
+            <h1>Tristan Wiesepape</h1>
+            <h3>Education</h3>
+            <dl class="uk-description-list">
+                <dt>Cypress Woods High School</dt>
+                <dd>13550 Woods-Spillane Blvd, Cypress, TX 77429 (2016-2020)</dd>
+                <dt>University of Texas at Austin</dt>
+                <dd>Austin, TX 78712 (2020-Present)</dd>
+            </dl>
+            <h3>Work Experience</h3>
+            <dl class="uk-description-list">
+                <dt>Infinitaz</dt>
+                <dd>Programming Intern (February 2020-Present)</dd>
+                <dd>I independently worked on a variety of projects for clients. I used technologies such as Linux, C#, and Salesforce</dd>
+            </dl>
+            <h3>Projects</h3>
+            <dl class="uk-description-list">
+                <dt>Cy Woods App v1 — Android / Java</dt>
+                <dd>Android app allows students to access grades, athletic scores, news, and more from home</dd>
+                <dt>Cy Woods App v2 — Flutter / Dart</dt>
+                <dd>Complete rewrite of the Android app in Flutter to allow it to become cross platform</dd>
+                <dt>FBLA Video Game Design — Unity / C#</dt>
+                <dd>A Unity based quiz game composed of over 1,000 questions, skill based minigames, multiplayer modes, and an interactive tutorial</dd>
+                <dt>Hufco Hose Database System — Flutter / Dart (App) and Django / Python (Website)</dt>
+                <dd>I designed a database system for tracking inventory for a hydraulics company called Hufco that consisted of a mobile app for inputting inventory, and a website to track and search the inventory</dd>
+                <dt>Salesforce / Dynamics Sync — C#</dt>
+                <dd>Automated program to sync records between two popular customer databases - Salesforce and Microsoft Dynamics</dd>
+            </dl>
         </div>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
+        <div>
+            <ul class="uk-list">
+                <li>18210 County Shores Ln.</li>
+                <li>Cypress, TX 77433</li>
+                <li>(713) 501-4581</li>
+                <li>wiesepapetristan@gmail.com</li>
+            </ul>
+            <h3>Honors & Awards</h3>
+            <ul class="uk-list">
+                <li>1st Place UIL State Computer Science Individual (2019)</li>
+                <li>4th Place HP Codewars (2019)</li>
+                <li>National AP Scholar (2019)</li>
+                <li>USA Computing Olympiad Gold Division (2019)</li>
+                <li>2nd Place Lockheed Martin Code Quest Advanced Division (2019)</li>
+                <li>4th Place FBLA Nationals Video Game Design (2019)</li>
+                <li>2nd Place UT Dallas Computer Science Contest Advanced Division (2017)</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul class="uk-list">
+                <li>Java</li>
+                <li>Android</li>
+                <li>C#</li>
+                <li>Unity</li>
+                <li>WPF</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Dart</li>
+                <li>Flutter</li>
+                <li>Linux</li>
+                <li>Microsoft Office Suite</li>
+            </ul>
+        </div>
+    </div>
+    <div class="uk-section-small">
+        <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
+            <ul uk-margin="" class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom">
                 <li>
-                    <a href="/tristan">Tristan</a>
+                    <a href="mailto:wiesepapetristan@gmail.com" class="uk-icon-link" uk-icon="mail"></a>
                 </li>
                 <li>
-                    <a href="/ronak">Ronak</a>
+                    <a href="https://github.com/qwetboy10" class="uk-icon-link" uk-icon="github"></a>
                 </li>
             </ul>
         </div>
-    </nav>
-</div>
-<div class="uk-section uk-flex uk-flex-middle uk-text-center" style="min-height: calc((100vh - 80px) - 102.625px);">
-    <div class="uk-width-1-1">
-        <div class="uk-container">
-            <p>
-                Resume goes here
-            </p>
-        </div>
     </div>
-</div>
-<div class="uk-section-small">
-    <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
-        <ul uk-margin="" class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom">
-            <li>
-                <a href="mailto:wiesepapetristan@gmail.com" class="uk-icon-link" uk-icon="mail"></a>
-            </li>
-            <li>
-                <a href="https://github.com/qwetboy10" class="uk-icon-link" uk-icon="github"></a>
-            </li>
-        </ul>
-    </div>
-</div>
 </body>
+
 </html>

@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>Welcome to Dent</title>
     <!-- CSS  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+            /* Hide scrollbars */
+        }
+    </style>
 </head>
+
 <body class="uk-background-secondary uk-light">
-<div class="uk-navbar-container uk-navbar-transparent uk-sticky uk-sticky-fixed">
-    <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-            <a href="/" class="uk-navbar-item">Dent</a>
+    <div class="uk-navbar-container uk-navbar-transparent uk-sticky uk-sticky-fixed">
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <a href="/" class="uk-navbar-item">Dent</a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="/tristan">Tristan</a>
+                    </li>
+                    <li>
+                        <a href="/ronak">Ronak</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="uk-section uk-flex uk-flex-middle uk-text-center" style="min-height: calc((100vh - 80px) - 102.625px);">
+        <div class="uk-width-1-1">
+            <div class="uk-container">
+                <p>Dent:</p>
+                <p>A CTF Team</p>
+                <p>Please Hire Us</p>
+            </div>
         </div>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li>
-                    <a href="/tristan">Tristan</a>
-                </li>
-                <li>
-                    <a href="/ronak">Ronak</a>
-                </li>
+    </div>
+    <div class="uk-section-small">
+        <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
+            <ul uk-margin="" class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom">
+                <li>Uptime: {{ uptime }}</li>
+                <li>Public IP: {{ ip }}</li>
             </ul>
         </div>
-    </nav>
-</div>
-<div class="uk-section uk-flex uk-flex-middle uk-text-center" style="min-height: calc((100vh - 80px) - 102.625px);">
-    <div class="uk-width-1-1">
-        <div class="uk-container">
-            <p>Dent:</p>
-            <p>A CTF Team</p>
-            <p>Please Hire Us</p>
-        </div>
     </div>
-</div>
-<div class="uk-section-small">
-    <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
-        <ul uk-margin="" class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom">
-            <li>Uptime: {{ uptime }}</li>
-            <li>Public IP: {{ ip }}</li>
-        </ul>
-    </div>
-</div>
 </body>
+
 </html>
